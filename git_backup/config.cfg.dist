@@ -1,0 +1,9 @@
+[git-backup]
+GITHUB_EMAIL =
+GITHUB_PASS =
+
+BITBUCKET_USER =
+BITBUCKET_EMAIL =
+BITBUCKET_PASS =
+
+BACKUP_PATH = /tmp/git-backup

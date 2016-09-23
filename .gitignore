@@ -1,0 +1,4 @@
+git_backup/config.cfg
+venv
+*.pyc
+*.egg-info
