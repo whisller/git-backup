@@ -1,10 +1,13 @@
 from setuptools import setup
 
 config = {
-    'name': 'git-backup',
-    'version': '1.0.0',
+    'name': 'git-repo-backup',
+    'version': '1.0.1',
+    'description': 'Backups all of your remote git repositories (Github/Bitbucket) locally.',
+    'keywords': ['git', 'github', 'bitbucket', 'backup'],
     'author': 'Daniel Ancuta',
     'author_email': 'whisller@gmail.com',
+    'url': 'https://github.com/whisller/git-backup',
     'packages': [
         'git_backup'
     ],
