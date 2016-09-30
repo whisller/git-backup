@@ -12,9 +12,13 @@ Backups all of your remote git repositories ([GitHub](https://github.com/) / [Bi
 ### How to run it?
 
 #### Install by hand
-
 ```
 $ git clone https://github.com/whisller/git-backup.git
+```
+
+#### Install with pypi
+```
+$ pip install git-repo-backup
 ```
 
 #### Configure it
