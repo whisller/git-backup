@@ -1,4 +1,5 @@
 git_backup/config.cfg
+git_backup/.repositories
 venv
 build
 dist
