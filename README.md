@@ -1,12 +1,10 @@
 # Git backup.
 
-##
-
 Backups all of your remote git repositories ([GitHub](https://github.com/) / [Bitbucket](https://bitbucket.org/)) locally.
 
 
 ### What do I need?
-- Python 3.5
+- Python 3+
 
 
 ### How to run it?
