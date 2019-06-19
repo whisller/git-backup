@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "git-repo-backup"
+version = "2.0.0"
+description = "Backups all of your remote GitHub repositories locally."
+authors = ["whisller <whisller@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+include = ["config.yaml", "README.md", "bootstrap/**/*.*"]
+homepage = "https://github.com/whisller/git-repo-backup"
+repository = "https://github.com/whisller/git-repo-backup"
+classifiers = [
+    "Environment :: Other Environment",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3 :: Only"
+]
+keywords = ["git", "github"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pygithub = "^1.43"
+tqdm = "^4.32"
+gitpython = "^2.1"
+click = "^7.0"
+
+[tool.poetry.dev-dependencies]
+black = "19.3b0"
+
+[tool.poetry.scripts]
+git-backup = "git_repo_backup.backup:cli"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
