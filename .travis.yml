@@ -1,0 +1,10 @@
+language: python
+python:
+  - '3.6'
+before_install:
+  - curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py > get-poetry.py
+  - python get-poetry.py --preview --yes
+install:
+  - ~/.poetry/bin/poetry install
+script:
+  - "~/.poetry/bin/poetry run black --check ."

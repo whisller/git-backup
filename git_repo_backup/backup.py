@@ -20,7 +20,9 @@ def cli(path):
         except (InvalidGitRepositoryError, NoSuchPathError):
             if not os.path.isdir(local_repository_path):
                 os.makedirs(local_repository_path)
-            repo = Repo.clone_from(f"https://github.com/{repo['name']}.git", local_repository_path)
+            repo = Repo.clone_from(
+                f"https://github.com/{repo['name']}.git", local_repository_path
+            )
 
         for remote in repo.remotes:
             remote.fetch()
@@ -36,7 +38,7 @@ def github_integration(path):
     github_repos = github.get_user().get_repos()
 
     for r in github_repos:
-        yield {'name': r.full_name}
+        yield {"name": r.full_name}
 
 
 def _validate(required_envs):
@@ -46,5 +48,5 @@ def _validate(required_envs):
         sys.exit()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     cli()
